@@ -11,5 +11,9 @@ Pakyow::App.bindings do
     binding :show do
       { href: router.group(:tweet).path(:show, tweet_id: bindable.id) }
     end
+
+    binding :twitter_link do
+      { href: "http://twitter.com/#{bindable.user.screen_name}/status/#{bindable.id}" }
+    end
   end
 end
