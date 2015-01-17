@@ -1,10 +1,5 @@
 require 'bundler/setup'
 
-if ENV['RACK_ENV'] == 'development'
-  require 'dotenv'
-  Dotenv.load
-end
-
 require 'pakyow'
 
 Pakyow::App.define do
@@ -19,7 +14,8 @@ Pakyow::App.define do
   end
 
   configure :development do
-    # put development config here
+    require 'dotenv'
+    Dotenv.load
   end
 
   configure :prototype do
