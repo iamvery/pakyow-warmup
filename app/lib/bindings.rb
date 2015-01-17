@@ -7,5 +7,9 @@ Pakyow::App.bindings do
     binding :user do
       bindable.user.name
     end
+
+    binding :show do
+      { href: router.group(:tweet).path(:show, tweet_id: bindable.id) }
+    end
   end
 end

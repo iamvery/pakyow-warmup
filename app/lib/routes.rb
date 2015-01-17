@@ -9,5 +9,13 @@ Pakyow::App.routes do
         .scope(:tweet)
         .apply(tweets)
     end
+
+    show do
+      tweet = twitter_client.status(params[:tweet_id])
+
+      view
+        .scope(:tweet)
+        .apply(tweet)
+    end
   end
 end
