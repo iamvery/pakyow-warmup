@@ -11,4 +11,5 @@ gem 'twitter'
 
 group :development, :test do
   gem 'dotenv'
+  gem 'pry'
 end

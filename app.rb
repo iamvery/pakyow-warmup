@@ -16,6 +16,7 @@ Pakyow::App.define do
   configure :development do
     require 'dotenv'
     Dotenv.load
+    require 'pry'
   end
 
   configure :prototype do
