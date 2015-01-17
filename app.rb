@@ -1,6 +1,9 @@
 require 'bundler/setup'
-require 'dotenv'
-Dotenv.load
+
+if ENV['RACK_ENV'] == 'development'
+  require 'dotenv'
+  Dotenv.load
+end
 
 require 'pakyow'
 
