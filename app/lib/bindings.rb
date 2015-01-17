@@ -1,3 +1,11 @@
 Pakyow::App.bindings do
-  # define bindings here
+  scope :tweet do
+    binding :avatar do
+      { src: bindable.user.profile_image_url }
+    end
+
+    binding :user do
+      bindable.user.name
+    end
+  end
 end
