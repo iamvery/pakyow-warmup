@@ -1,28 +1,12 @@
-This is a Pakyow v0.9 app.
+# Pakyow Warmup Exercise
 
-# Getting Started
+Working through the @pakyow warmup exercise. http://pakyow.com/warmup. This
+repo may be worth reading through commit-wise if you're interested. I tried
+to keep the progression of the app very clear with good comments.
 
-Start the app server:
+## Issues
 
-  `pakyow server`
+I did run into a couple problems which have been recorded as @github issues:
 
-You'll find your app running at [http://localhost:3000](http://localhost:3000)!
-
-Need to interact with your app? Fire up a console:
-
-  `pakyow console`
-
-# Next Steps
-
-The following resources might be handy:
-
-- [Website](http://pakyow.com)
-- [Warmup](http://pakyow.com/warmup)
-- [Docs](http://pakyow.com/docs)
-- [Code](http://github.com/metabahn/pakyow)
-
-Want to keep up with the latest development? Follow along:
-
-- [Blog](http://pakyow.com/blog)
-- [Mailing List](http://groups.google.com/group/pakyow)
-- [Twitter](http://twitter.com/pakyow)
+* https://github.com/pakyow/pakyow/issues/65
+* https://github.com/pakyow/pakyow/issues/66
