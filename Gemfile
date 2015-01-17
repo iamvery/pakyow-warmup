@@ -6,6 +6,7 @@ gem "pakyow", "0.9.1"
 gem "puma"
 
 gem 'rake'
+gem 'twitter'
 
 group :development, :test do
   gem 'dotenv'
