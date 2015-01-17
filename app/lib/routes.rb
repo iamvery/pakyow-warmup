@@ -1,8 +1,13 @@
 Pakyow::App.routes do
-  # define your routes here
+  restful :tweet, '/' do
+    list do
+      tweets = twitter_client.search('#programming', result_type: 'recent')
+        .take(10)
+        .to_a
 
-  # see something working by uncommenting the line below
-  # default do
-  #   puts 'hello'
-  # end
+      view
+        .scope(:tweet)
+        .apply(tweets)
+    end
+  end
 end
