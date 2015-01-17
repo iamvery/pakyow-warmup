@@ -32,6 +32,6 @@ Pakyow::App.define do
   end
 
   configure :production do
-    # put your production config here
+    app.log_output = true
   end
 end
