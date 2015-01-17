@@ -5,19 +5,19 @@
 </a>
 
 <div data-scope="tweet" class="margin-t">
-  <img src="http://placehold.it/50x50" class="float-l margin-r">
+  <img data-prop="avatar" src="http://placehold.it/50x50" class="float-l margin-r">
 
-  <h4>
+  <h4 data-prop="user">
     User's Name
   </h4>
 
-  <p>
+  <p data-prop="text">
     Tweet text goes here
   </p>
 
   <p>
-    Retweeted n times;
-    Favorited n times;
+    Retweeted <span data-prop="retweet_count">n</span> times;
+    Favorited <span data-prop="retweet_count">n</span> times;
     <a href="#">
       View on twitter
     </a>
